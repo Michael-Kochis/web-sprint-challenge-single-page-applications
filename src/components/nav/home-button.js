@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap'
 import { useHistory } from 'react-router-dom'
 
 function HomeButton() {
-    let { history } = useHistory();
+    let history  = useHistory();
 
     function goHome() {
         history.push("/");

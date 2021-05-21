@@ -1,3 +1,15 @@
+h1 {
+  text-align: center;
+  margin: 0.5rem auto;
+  color: orangered;
+}
+
+button {
+  font-size: 1.5rem;
+  padding: 1%;
+  border: 2px solid black;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +47,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#top-bar {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: right;
+  margin-right: 2rem;
 }
