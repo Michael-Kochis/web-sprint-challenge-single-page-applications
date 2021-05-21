@@ -1,12 +1,14 @@
 import React from 'react'
 
 function OrderButton(props) {
+    const { disabled, submit } = props;
+
     return (
-        <div>
-            <label>Add to Order
-                <button id="order-button">Order</button>
-            </label>
-        </div>
+    <button id="order-button" disabled={disabled} onClick={submit}>
+        <span>Add to Order</span>
+        <span>$17.99</span>
+    </button>
+        
     )
 }
 

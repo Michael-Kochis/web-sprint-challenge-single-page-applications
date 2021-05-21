@@ -10,6 +10,10 @@ button {
   border: 2px solid black;
 }
 
+span {
+  margin: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -36,17 +40,18 @@ button {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.topping {
+  margin: 0.5rem 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.w-40 {
+  width: 40%;
+}
+
+#instructions {
+  width: 90%;
+  height: 15vh;
+  margin-left: 5%;
 }
 
 #navbar {
@@ -54,9 +59,81 @@ button {
   justify-content: flex-end;
 }
 
+#number-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 40%;
+}
+
+#number-buttons {
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+#number-field {
+  border: 2px solid black;
+  height: 3.8rem;
+  width: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#order-bar {
+  background-color: bisque;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#order-button {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  height: 3rem;
+  width: 70%;
+  margin: 0 2rem;
+}
+
+#order-numberer {
+  width: 20%;
+  margin: 0.5rem 1.2rem;
+}
+
+.red {
+  color:red;
+}
+
+#pizza-section {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+#sauce-header, #size-header, #special-instructions, #topping-header {
+  background-color: gray;
+}
+
+#sauce-radio-box {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
 #top-bar {
   display: flex;
   flex-flow: column nowrap;
   justify-content: right;
   margin-right: 2rem;
+}
+
+#toppings-box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
